@@ -1,0 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Funnel+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --color-zad-blue: #063A8E;
+  --color-zad-dark: #020D1E;
+  --font-sans: "Funnel Sans", ui-sans-serif, system-ui, sans-serif;
+}
+
+body {
+  background-color: #F4F4F4;
+  color: #020D1E;
+}
+
+/* ZAD's signature glowing eclipse background */
+.zad-radial-glow {
+  background: radial-gradient(110% 120% at 50% 0%, #ffffff 0%, #ffffff 25%, #C9DBFB 50%, #063A8E 85%, #020D1E 100%);
+}
+
+.zad-radial-blue {
+  background: radial-gradient(100% 120% at 50% 0%, #063A8E 0%, #031e4d 40%, #020D1E 100%);
+}
