@@ -48,7 +48,7 @@ export default function App() {
                 initial={{ opacity: 0, y: 10 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: 1.2, duration: 0.8 }}
-                className="h-[5rem] sm:h-[7rem] md:h-[9rem] lg:h-[11rem] w-auto select-none"
+                className="h-[3.5rem] sm:h-[4.5rem] md:h-[6rem] lg:h-[7rem] w-auto select-none"
                 draggable={false}
               />
            </motion.div>
