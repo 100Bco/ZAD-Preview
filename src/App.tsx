@@ -6,7 +6,7 @@ function Slogan({ className = "" }: { className?: string }) {
       aria-label="Do It Right. Once."
       className={`font-bold tracking-tight text-zad-dark whitespace-nowrap ${className}`}
     >
-      D<span aria-hidden="true" className="inline-block align-middle rounded-full bg-zad-blue w-[0.28em] h-[0.28em]" />&nbsp;It Right.&nbsp;<span aria-hidden="true" className="inline-block align-middle rounded-full bg-zad-blue w-[0.82em] h-[0.82em]" />nce.
+      D<span aria-hidden="true" className="inline-block rounded-full bg-zad-blue w-[0.28em] h-[0.28em]" style={{ verticalAlign: "0.11em" }} />&nbsp;It Right.&nbsp;<span aria-hidden="true" className="inline-block rounded-full bg-zad-blue w-[0.82em] h-[0.82em]" style={{ verticalAlign: "-0.06em" }} />nce.
     </span>
   );
 }
@@ -64,10 +64,27 @@ export default function App() {
             {/* Right: Socials & Top Action */}
             <div className="flex items-center gap-6 md:gap-10">
                <div className="flex gap-5 text-sm text-zad-dark font-bold tracking-widest">
-                  <a href="#" className="hover:text-zad-blue transition-colors">FB</a>
-                  <a href="#" className="hover:text-zad-blue transition-colors">IG</a>
-                  <a href="#" className="hover:text-zad-blue transition-colors">BE</a>
-                  <a href="#" className="hover:text-zad-blue transition-colors">LI</a>
+                  <a
+                    href="https://www.facebook.com/profile.php?id=100054634920851"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="Facebook"
+                    className="hover:text-zad-blue transition-colors"
+                  >FB</a>
+                  <a
+                    href="https://www.instagram.com/zadagency.co"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="Instagram"
+                    className="hover:text-zad-blue transition-colors"
+                  >IG</a>
+                  <a
+                    href="https://www.behance.net/ZADdesigner"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="Behance"
+                    className="hover:text-zad-blue transition-colors"
+                  >BE</a>
                </div>
             </div>
 
