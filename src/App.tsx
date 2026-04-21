@@ -4,19 +4,9 @@ function Slogan({ className = "" }: { className?: string }) {
   return (
     <span
       aria-label="Do It Right. Once."
-      className={`font-semibold tracking-tight text-zad-dark inline-flex items-center whitespace-nowrap ${className}`}
+      className={`font-bold tracking-tight text-zad-dark whitespace-nowrap ${className}`}
     >
-      <span>D</span>
-      <span
-        aria-hidden="true"
-        className="inline-block rounded-full bg-zad-blue w-[0.32em] h-[0.32em] mx-[0.08em]"
-      />
-      <span>&nbsp;It Right.&nbsp;</span>
-      <span
-        aria-hidden="true"
-        className="inline-block rounded-full bg-zad-blue w-[0.72em] h-[0.72em] mx-[0.06em]"
-      />
-      <span>nce.</span>
+      D<span aria-hidden="true" className="inline-block align-middle rounded-full bg-zad-blue w-[0.28em] h-[0.28em]" />&nbsp;It Right.&nbsp;<span aria-hidden="true" className="inline-block align-middle rounded-full bg-zad-blue w-[0.82em] h-[0.82em]" />nce.
     </span>
   );
 }
@@ -35,7 +25,7 @@ export default function App() {
              transition={{ duration: 1, ease: "easeOut" }}
              className="w-full text-center flex flex-col items-center justify-center relative z-10"
            >
-              <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold tracking-tight text-zad-dark mb-4 md:mb-6 whitespace-nowrap">
+              <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold tracking-tight text-zad-dark mb-10 md:mb-14 whitespace-nowrap">
                  Coming Soon<motion.span
                     initial={{ opacity: 0 }}
                     animate={{ opacity: 1 }}
@@ -67,7 +57,7 @@ export default function App() {
                  className="h-10 md:h-12 w-auto select-none"
                  draggable={false}
                />
-               <span className="w-1.5 h-1.5 rounded-full bg-gray-300"></span>
+               <span className="w-2 h-2 rounded-full bg-zad-blue"></span>
                <Slogan className="text-base md:text-lg" />
             </div>
 
