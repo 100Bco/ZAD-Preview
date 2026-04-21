@@ -6,7 +6,7 @@ function Slogan({ className = "" }: { className?: string }) {
       aria-label="Do It Right. Once."
       className={`font-bold tracking-tight text-zad-dark whitespace-nowrap ${className}`}
     >
-      D<span aria-hidden="true" className="inline-block rounded-full bg-zad-blue w-[0.28em] h-[0.28em]" style={{ verticalAlign: "0.11em" }} />&nbsp;It Right.&nbsp;<span aria-hidden="true" className="inline-block rounded-full bg-zad-blue w-[0.82em] h-[0.82em]" style={{ verticalAlign: "-0.06em" }} />nce.
+      D<span aria-hidden="true" className="inline-block rounded-full bg-zad-blue w-[0.28em] h-[0.28em] align-baseline" />&nbsp;It Right.&nbsp;<span aria-hidden="true" className="inline-block rounded-full bg-zad-blue w-[0.82em] h-[0.82em] align-baseline" />nce.
     </span>
   );
 }
@@ -49,17 +49,8 @@ export default function App() {
       <footer className="px-6 md:px-12 pb-8 pt-12 max-w-[1600px] mx-auto w-full mt-auto">
          <div className="flex flex-col md:flex-row justify-between items-center gap-6 border-t border-gray-200 pt-6">
 
-            {/* Left: Branding & Slogan */}
-            <div className="flex items-center gap-3 md:gap-4">
-               <img
-                 src="/brand/LOGO%20ZAD-39.png"
-                 alt="ZAD.Inc"
-                 className="h-10 md:h-12 w-auto select-none"
-                 draggable={false}
-               />
-               <span className="w-2 h-2 rounded-full bg-zad-blue"></span>
-               <Slogan className="text-base md:text-lg" />
-            </div>
+            {/* Left: Slogan */}
+            <Slogan className="text-base md:text-lg" />
 
             {/* Right: Socials & Top Action */}
             <div className="flex items-center gap-6 md:gap-10">
