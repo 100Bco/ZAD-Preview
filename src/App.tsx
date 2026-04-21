@@ -1,16 +1,5 @@
 import { motion } from "motion/react";
 
-function Slogan({ className = "" }: { className?: string }) {
-  return (
-    <span
-      aria-label="Do It Right. Once."
-      className={`font-bold tracking-tight text-zad-dark whitespace-nowrap ${className}`}
-    >
-      D<span aria-hidden="true" className="inline-block rounded-full bg-zad-blue w-[0.28em] h-[0.28em] align-baseline" />&nbsp;It Right.&nbsp;<span aria-hidden="true" className="inline-block rounded-full bg-zad-blue w-[0.82em] h-[0.82em] align-baseline" />nce.
-    </span>
-  );
-}
-
 export default function App() {
   return (
     <div className="h-dvh bg-[#F4F4F4] text-zad-dark font-sans selection:bg-zad-blue selection:text-white antialiased flex flex-col overflow-hidden">
@@ -45,11 +34,16 @@ export default function App() {
         </div>
       </section>
 
-      {/* Footer: slogan + socials on a shared baseline */}
+      {/* Footer: slogan image + socials on a shared baseline */}
       <footer className="px-6 md:px-12 pb-6 pt-6 max-w-[1600px] mx-auto w-full">
         <div className="flex flex-col md:flex-row md:justify-between md:items-baseline items-center gap-4 border-t border-gray-200 pt-5">
 
-          <Slogan className="text-base md:text-lg" />
+          <img
+            src="/brand/Asset%209%4010x.png"
+            alt="Do It Right. Once."
+            className="h-5 md:h-6 w-auto select-none"
+            draggable={false}
+          />
 
           <nav
             aria-label="Social links"
