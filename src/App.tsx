@@ -14,12 +14,8 @@ export default function App() {
             transition={{ duration: 1, ease: "easeOut" }}
             className="w-full text-center flex flex-col items-center justify-center relative z-10"
           >
-            <h1 className="text-3xl sm:text-5xl md:text-6xl lg:text-7xl font-bold tracking-tight text-zad-dark mb-6 sm:mb-10 md:mb-14 whitespace-nowrap">
-              Coming Soon<motion.span
-                initial={{ opacity: 0 }}
-                animate={{ opacity: 1 }}
-                transition={{ delay: 1, duration: 0.5 }}
-                className="text-zad-blue">.</motion.span>
+            <h1 className="text-3xl sm:text-5xl md:text-6xl lg:text-7xl font-normal tracking-wide text-zad-dark mb-6 sm:mb-10 md:mb-14 whitespace-nowrap">
+              COMING SOON
             </h1>
             <motion.img
               src="/brand/Logo%20Zad.png"
@@ -34,9 +30,9 @@ export default function App() {
         </div>
       </section>
 
-      {/* Footer: slogan image + socials on a shared baseline */}
+      {/* Footer: slogan image + social icons on a shared baseline */}
       <footer className="px-4 sm:px-6 md:px-12 pb-4 sm:pb-6 pt-4 sm:pt-6 max-w-[1600px] mx-auto w-full">
-        <div className="flex flex-col md:flex-row md:justify-between md:items-baseline items-center gap-3 sm:gap-4 border-t border-gray-200 pt-4 sm:pt-5">
+        <div className="flex flex-col md:flex-row md:justify-between md:items-center items-center gap-3 sm:gap-4 border-t border-gray-200 pt-4 sm:pt-5">
 
           <img
             src="/brand/Asset%209%4010x.png"
@@ -47,29 +43,50 @@ export default function App() {
 
           <nav
             aria-label="Social links"
-            className="flex gap-4 sm:gap-5 text-xs sm:text-sm text-zad-dark font-bold tracking-widest"
+            className="flex items-center gap-3 sm:gap-4"
           >
             <a
               href="https://www.facebook.com/profile.php?id=100054634920851"
               target="_blank"
               rel="noopener noreferrer"
               aria-label="Facebook"
-              className="hover:text-zad-blue transition-colors"
-            >FB</a>
+              className="block transition-opacity hover:opacity-70"
+            >
+              <img
+                src="/brand/FB.png"
+                alt=""
+                className="h-6 md:h-7 w-auto select-none"
+                draggable={false}
+              />
+            </a>
             <a
               href="https://www.instagram.com/zadagency.co"
               target="_blank"
               rel="noopener noreferrer"
               aria-label="Instagram"
-              className="hover:text-zad-blue transition-colors"
-            >IG</a>
+              className="block transition-opacity hover:opacity-70"
+            >
+              <img
+                src="/brand/IG.png"
+                alt=""
+                className="h-6 md:h-7 w-auto select-none"
+                draggable={false}
+              />
+            </a>
             <a
               href="https://www.behance.net/ZADdesigner"
               target="_blank"
               rel="noopener noreferrer"
               aria-label="Behance"
-              className="hover:text-zad-blue transition-colors"
-            >BE</a>
+              className="block transition-opacity hover:opacity-70"
+            >
+              <img
+                src="/brand/BE.png"
+                alt=""
+                className="h-6 md:h-7 w-auto select-none"
+                draggable={false}
+              />
+            </a>
           </nav>
 
         </div>
